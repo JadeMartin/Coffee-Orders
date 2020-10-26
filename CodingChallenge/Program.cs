@@ -13,40 +13,13 @@ namespace CodingChallenge
 
         static void Main(string[] args)
         {
-            processOrders();
-            processPayments();
-            processPrices();
-        }
+            ReceiptController receiptController = new ReceiptController();
+            receiptController.setUp(); // function that reads the files then calls the controller endpoints
 
-        private static void processOrders()
-        {
-            var jsonString = File.ReadAllText("./Data/orders.json");
-            var myJson = JsonConvert.DeserializeObject<List<Order>>(jsonString);
-            OrderController orderController = new OrderController(); 
-            foreach (Order order in myJson)
+            Dictionary<String, Receipt> receiptDictionary = receiptController.GetReceipts();
+            foreach (KeyValuePair<String, Receipt> dic in receiptDictionary)
             {
-                orderController.post(order);
-            }
-        }
-
-        private static void processPayments()
-        {
-            var jsonString = File.ReadAllText("./Data/payments.json");
-            var myJson = JsonConvert.DeserializeObject<List<Payment>>(jsonString);
-            PaymentController paymentController = new PaymentController(); 
-            foreach (Payment payment in myJson)
-            {
-                paymentController.post(payment);
-            }
-        }
-        private static void processPrices()
-        {
-            var jsonString = File.ReadAllText("./Data/prices.json");
-            var myJson = JsonConvert.DeserializeObject<List<Price>>(jsonString);
-            PriceController priceController = new PriceController(); 
-            foreach (Price price in myJson)
-            {
-                priceController.post(price);
+                Console.WriteLine("User = {0}, TotalOrderCost = {1}", dic.Key, dic.Value.Order_total);
             }
         }
     }

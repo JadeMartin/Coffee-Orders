@@ -20,5 +20,12 @@ namespace CodingChallenge.controllers
         {
             return priceList;
         }
+
+        public double getPriceByOrder(Order order)
+        {
+           Price orderPrice = priceList.Find(price => price.Drink_name == order.Drink);
+           return orderPrice.Prices.getPriceBySize(order.Size);
+        }
+
     }
 }
