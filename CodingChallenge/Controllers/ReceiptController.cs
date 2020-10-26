@@ -70,7 +70,21 @@ namespace CodingChallenge.controllers
 
         private void calculateTotalPayments()
         {
-
+            List<Payment> paymentList = paymentController.GetPayments();
+            foreach (Payment payment in paymentList)
+            {   
+                if(receiptDictionary.ContainsKey(payment.User)) //Check if user is already in dictionary
+                { //if so add onto the order_total
+                    receiptDictionary[payment.User].Payment_total = receiptDictionary[payment.User].Payment_total +  payment.Amount;
+                } 
+                else  //if not then create a new entry to handle the user
+                {
+                    Receipt newRecipe = new Receipt();
+                    newRecipe.User = payment.User;
+                    newRecipe.Payment_total = payment.Amount;
+                    receiptDictionary.Add(payment.User, newRecipe);
+                }
+            }
         }
 
         private void calculateTotalOwned()

@@ -19,7 +19,7 @@ namespace CodingChallenge
             Dictionary<String, Receipt> receiptDictionary = receiptController.GetReceipts();
             foreach (KeyValuePair<String, Receipt> dic in receiptDictionary)
             {
-                Console.WriteLine("User = {0}, TotalOrderCost = {1}", dic.Key, dic.Value.Order_total);
+                Console.WriteLine("User = {0}, TotalOrderCost = {1}, TotalPayment = {2}", dic.Key, dic.Value.Order_total, dic.Value.Payment_total);
             }
         }
     }
