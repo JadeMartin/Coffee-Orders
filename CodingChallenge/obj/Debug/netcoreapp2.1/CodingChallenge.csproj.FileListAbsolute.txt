@@ -10,3 +10,6 @@ C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\C
 C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\obj\Debug\netcoreapp2.1\CodingChallenge.dll
 C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\obj\Debug\netcoreapp2.1\CodingChallenge.pdb
 C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\obj\Debug\netcoreapp2.1\CodingChallenge.genruntimeconfig.cache
+c:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+c:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+c:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll

@@ -72,10 +72,10 @@ namespace CodingChallenge.Tests
         {
             String output = setUp();
             var result = JsonConvert.DeserializeObject<List<Receipt>>(output);
-            Assert.Equal(result[0].User, "coach");
-            Assert.Equal(result[1].User, "ellis");
-            Assert.Equal(result[2].User, "rochelle");
-            Assert.Equal(result[3].User, "zoey");
+            Assert.Equal("coach", result[0].User);
+            Assert.Equal("ellis", result[1].User);
+            Assert.Equal("rochelle", result[2].User);
+            Assert.Equal("zoey", result[3].User);
         }
 
         [Fact]
@@ -83,10 +83,10 @@ namespace CodingChallenge.Tests
         {
             String output = setUp();
             var result = JsonConvert.DeserializeObject<List<Receipt>>(output);
-            Assert.Equal(result[0].Order_total, 8.00);
-            Assert.Equal(result[1].Order_total, 3.25);
-            Assert.Equal(result[2].Order_total, 4.50);
-            Assert.Equal(result[3].Order_total, 6.53);
+            Assert.Equal(8.00, result[0].Order_total);
+            Assert.Equal(3.25, result[1].Order_total);
+            Assert.Equal(4.50, result[2].Order_total);
+            Assert.Equal(6.53, result[3].Order_total);
         }
 
         [Fact]
@@ -94,10 +94,10 @@ namespace CodingChallenge.Tests
         {
             String output = setUp();
             var result = JsonConvert.DeserializeObject<List<Receipt>>(output);
-            Assert.Equal(result[0].Payment_total, 2.50);
-            Assert.Equal(result[1].Payment_total, 3.25);
-            Assert.Equal(result[2].Payment_total, 4.50);
-            Assert.Equal(result[3].Payment_total, 0.00);
+            Assert.Equal(2.50, result[0].Payment_total);
+            Assert.Equal(3.25, result[1].Payment_total);
+            Assert.Equal(4.50, result[2].Payment_total);
+            Assert.Equal(0.00, result[3].Payment_total);
         }
 
         [Fact]
@@ -105,10 +105,10 @@ namespace CodingChallenge.Tests
         {
             String output = setUp();
             var result = JsonConvert.DeserializeObject<List<Receipt>>(output);
-            Assert.Equal(result[0].Balance, 5.50);
-            Assert.Equal(result[1].Balance, 0.00);
-            Assert.Equal(result[2].Balance, 0.00);
-            Assert.Equal(result[3].Balance, 6.53);
+            Assert.Equal(5.50, result[0].Balance);
+            Assert.Equal(0.00, result[1].Balance);
+            Assert.Equal(0.00, result[2].Balance);
+            Assert.Equal(6.53, result[3].Balance);
         }
 
         [Fact]
@@ -117,7 +117,7 @@ namespace CodingChallenge.Tests
             String output = setUp();
             List<Receipt> result = JsonConvert.DeserializeObject<List<Receipt>>(output);
             List<Receipt> expectedResult = JsonConvert.DeserializeObject<List<Receipt>>(payments_json);
-            Assert.Equal(result.Count, expectedResult.Count);
+            Assert.Equal(expectedResult.Count, result.Count);
         }
 
         [Fact]
