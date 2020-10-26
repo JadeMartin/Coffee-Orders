@@ -7,8 +7,8 @@ namespace CodingChallenge.controllers
     public class OrderController
     {
 
-
-        public async void postOrder(Order order)
+//todo make async and enter into database
+        public void postOrder(Order order)
         {
             Console.WriteLine(order.Drink);
         }

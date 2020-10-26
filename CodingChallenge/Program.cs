@@ -12,7 +12,6 @@ namespace CodingChallenge
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World! ********************************************");
             var jsonString = File.ReadAllText("./Data/orders.json");
             var myJson = JsonConvert.DeserializeObject<List<Order>>(jsonString);
             OrderController orderController = new OrderController(); 
