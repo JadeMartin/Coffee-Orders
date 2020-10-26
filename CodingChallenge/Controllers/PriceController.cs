@@ -1,5 +1,6 @@
 using CodingChallenge.Models;
 using System;
+using System.Collections.Generic;
 
 
 namespace CodingChallenge.controllers
@@ -7,10 +8,17 @@ namespace CodingChallenge.controllers
     public class PriceController
     {
 
-//todo make async and enter into database
+        private List<Price> priceList = new List<Price>();
+
+        //TODO make functions ASYNC & interact with database
         public void post(Price price)
         {
-            Console.WriteLine(price.Prices.Small);
+            priceList.Add(price);
+        }
+
+        public List<Price> GetPrices()
+        {
+            return priceList;
         }
     }
 }

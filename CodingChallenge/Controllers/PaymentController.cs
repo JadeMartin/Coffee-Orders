@@ -1,16 +1,24 @@
 using CodingChallenge.Models;
 using System;
+using System.Collections.Generic;
 
 
 namespace CodingChallenge.controllers
 {
     public class PaymentController
     {
+        //TODO: Replace backend list with SQL lite DB
+        private List<Payment> paymentList = new List<Payment>();
 
-//todo make async and enter into database
+        //TODO make functions ASYNC & interact with database
         public void post(Payment payment)
         {
-            Console.WriteLine(payment.User);
+            paymentList.Add(payment);
+        }
+
+        public List<Payment> GetPayments()
+        {
+            return paymentList;
         }
     }
 }

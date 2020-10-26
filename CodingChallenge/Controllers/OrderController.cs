@@ -1,16 +1,25 @@
 using CodingChallenge.Models;
 using System;
+using System.Collections.Generic;
+
 
 
 namespace CodingChallenge.controllers
 {
     public class OrderController
     {
+        //TODO: Replace backend list with SQL lite DB
+        private List<Order> orderList = new List<Order>();
 
-//todo make async and enter into database
+        //TODO make functions ASYNC & interact with database
         public void post(Order order)
         {
-            Console.WriteLine(order.Drink);
+            orderList.Add(order);
+        }
+
+        public List<Order> GetOrders()
+        {
+            return orderList;
         }
     }
 }

@@ -17,5 +17,20 @@ namespace CodingChallenge.Models
             get;  
             set;  
         }  
+        public double Huge
+        {  
+            get;  
+            set;  
+        }  
+        public double Mega
+        {  
+            get;  
+            set;  
+        }  
+        public double Ultra
+        {  
+            get;  
+            set;  
+        }  
     }  
 }
