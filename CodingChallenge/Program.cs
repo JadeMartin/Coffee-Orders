@@ -15,7 +15,7 @@ namespace CodingChallenge
         {
             processOrders();
             processPayments();
-            
+            processPrices();
         }
 
         private static void processOrders()
@@ -37,6 +37,16 @@ namespace CodingChallenge
             foreach (Payment payment in myJson)
             {
                 paymentController.post(payment);
+            }
+        }
+        private static void processPrices()
+        {
+            var jsonString = File.ReadAllText("./Data/prices.json");
+            var myJson = JsonConvert.DeserializeObject<List<Price>>(jsonString);
+            PriceController priceController = new PriceController(); 
+            foreach (Price price in myJson)
+            {
+                priceController.post(price);
             }
         }
     }
