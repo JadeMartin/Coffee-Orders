@@ -4,13 +4,13 @@ using System;
 
 namespace CodingChallenge.controllers
 {
-    public class OrderController
+    public class PaymentController
     {
 
 //todo make async and enter into database
-        public void post(Order order)
+        public void post(Payment payment)
         {
-            Console.WriteLine(order.Drink);
+            Console.WriteLine(payment.User);
         }
     }
 }
