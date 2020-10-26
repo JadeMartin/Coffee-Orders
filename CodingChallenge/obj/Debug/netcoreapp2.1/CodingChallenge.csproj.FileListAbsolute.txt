@@ -1,0 +1,12 @@
+C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\obj\Debug\netcoreapp2.1\CodingChallenge.csprojAssemblyReference.cache
+C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\obj\Debug\netcoreapp2.1\CodingChallenge.AssemblyInfoInputs.cache
+C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\obj\Debug\netcoreapp2.1\CodingChallenge.AssemblyInfo.cs
+C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\obj\Debug\netcoreapp2.1\CodingChallenge.csproj.CoreCompileInputs.cache
+C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\bin\Debug\netcoreapp2.1\CodingChallenge.deps.json
+C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\bin\Debug\netcoreapp2.1\CodingChallenge.runtimeconfig.json
+C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\bin\Debug\netcoreapp2.1\CodingChallenge.runtimeconfig.dev.json
+C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\bin\Debug\netcoreapp2.1\CodingChallenge.dll
+C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\bin\Debug\netcoreapp2.1\CodingChallenge.pdb
+C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\obj\Debug\netcoreapp2.1\CodingChallenge.dll
+C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\obj\Debug\netcoreapp2.1\CodingChallenge.pdb
+C:\Users\jadem\Desktop\portfolio\interviewTest\Mudbath\Backend\CodingChallenge\CodingChallenge\obj\Debug\netcoreapp2.1\CodingChallenge.genruntimeconfig.cache
