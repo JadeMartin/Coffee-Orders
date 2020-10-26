@@ -7,7 +7,7 @@ namespace CodingChallenge.Models
             get;  
             set;  
         }  
-        public int Amount  
+        public double Amount  
         {  
             get;  
             set;  

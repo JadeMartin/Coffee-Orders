@@ -4,7 +4,7 @@ using CodingChallenge.Models;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using CodingChallenge.controllers;
-
+using CodingChallenge.Tests;
 
 namespace CodingChallenge
 {
@@ -13,14 +13,12 @@ namespace CodingChallenge
 
         static void Main(string[] args)
         {
-            ReceiptController receiptController = new ReceiptController();
-            receiptController.setUp(); // function that reads the files then calls the controller endpoints
-
-            Dictionary<String, Receipt> receiptDictionary = receiptController.GetReceipts();
-            foreach (KeyValuePair<String, Receipt> dic in receiptDictionary)
-            {
-                Console.WriteLine("User = {0}, TotalOrderCost = {1}, TotalPayment = {2}", dic.Key, dic.Value.Order_total, dic.Value.Payment_total);
-            }
+            // ReceiptController receiptController = new ReceiptController();
+            // receiptController.setUp(); // function that reads the files then calls the controller endpoints
+            // String jsonResult = receiptController.GetReceipts(); // function to get the expected result
+            // Console.WriteLine(jsonResult);
+            Test test = new Test();
+            test.HasUsersWhoOrderedCoffee();
         }
     }
 }
